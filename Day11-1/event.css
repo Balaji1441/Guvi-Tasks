@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    border-style: solid;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left {
+    flex: 1;
+    text-align: center;
+}
+
+.left img {
+    max-width: 75%;
+    height: 70%;
+    margin-top: 40px;
+}
+
+input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        margin-bottom: 10px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        margin-top: 10px;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    input[type="reset"] {
+        background-color: #f44336;
+        color: white;
+    }
+
+.right {
+    flex: 1;
+    text-align: center;
+    animation: moveToLeft 1s forwards;
+    margin-right: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
